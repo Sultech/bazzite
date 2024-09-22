@@ -7,8 +7,6 @@ Removes wireplumber
 
 Installs pipewire-media-session package.
 
-#Rebase Command
+# Rebase Command
 
-    ```rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sultech/bazzite:latest
-
-    ```
+    rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sultech/bazzite:latest
