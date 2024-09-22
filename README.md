@@ -9,6 +9,6 @@ Installs pipewire-media-session package.
 
 #Rebase Command
 
-    ```bash
-rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sultech/bazzite:latest
+    ```rpm-ostree rebase ostree-image-signed:docker://ghcr.io/sultech/bazzite:latest
+
     ```
