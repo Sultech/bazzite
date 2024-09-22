@@ -27,3 +27,6 @@ rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 #### Example for enabling a System Unit File Test
 
 systemctl enable docker
+systemctl enable pipewire-session-manager
+systemctl enable pipewire-media-session
+
