@@ -1,4 +1,6 @@
 # Custom image of Bazzite-Gnome-Nvidia
 
-# Purpose
-Installs docker, removes wireplumber and install pipewire-media-session package.
+# Changes 
+Installs Docker
+Removes wireplumber
+Installs pipewire-media-session package.
