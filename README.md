@@ -1,11 +1,14 @@
 # Custom image of Bazzite-Gnome-Nvidia
 
 # Changes 
-Installs Docker
 
-Removes wireplumber
+Adds Docker Repo and installs these packages:
 
-Installs pipewire-media-session package.
+docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+
+
+Removes wireplumber and installs the pipewire-media-session package.
+
 
 # Rebase Command
 
