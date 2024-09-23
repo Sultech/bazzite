@@ -21,8 +21,8 @@ curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedor
 # this installs a package from fedora repos
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session
 
-dnf install @virtualization -y
-
+rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
+sudo systemctl enable bazzite-libvirtd-setup.service
 # this would install a package from rpmfusion
 # rpm-ostree install vlc
 
