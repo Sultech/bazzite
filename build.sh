@@ -38,3 +38,11 @@ cd /etc/scripts/
 # pip install git+https://github.com/georgewhewell/undervolt.git
 curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
 # systemctl enable undervolt
+
+flatpak install flathub io.github.ungoogled_software.ungoogled_chromium
+flatpak install flathub com.discordapp.Discord
+flatpak install flathub org.telegram.desktop
+flatpak install flathub com.usebottles.bottles
+flatpak install flathub com.stremio.Stremio
+flatpak install flathub com.heroicgameslauncher.hgl
+flatpak install flathub org.remmina.Remmina
