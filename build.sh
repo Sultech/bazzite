@@ -29,6 +29,11 @@ systemctl enable docker-permission-fix
 rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
 systemctl enable bazzite-libvirtd-setup.service
 
+curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
+chmod +x /etc/scripts/append_to_environment.sh
+cd /etc/scripts/
+./append_to_environment.sh
+
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
 # curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
