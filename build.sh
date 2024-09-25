@@ -19,8 +19,9 @@ dnf remove wireplumber -y
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session
 systemctl enable docker
-curl -Lo /var/usrlocal/bin/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
-chmod u+x /var/usrlocal/bin/docker-fix.sh
+mkdir /etc/scripts/
+curl -Lo /etc/scripts/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
+chmod u+x /etc/scripts/docker-fix.sh
 curl -Lo /etc/systemd/system/docker-permission-fix.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-permission-fix.service
 systemctl enable docker-permission-fix
 
