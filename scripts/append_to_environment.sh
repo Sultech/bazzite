@@ -13,7 +13,7 @@ LINES_TO_APPEND=(
 append_line() {
     local line="$1"
     if ! grep -Fxq "$line" /etc/environment; then
-        echo "$line" | sudo tee -a /etc/environment > /dev/null
+        echo "$line" >> /etc/environment
         echo "Appended: $line"
     else
         echo "The line already exists: $line"
@@ -24,4 +24,3 @@ append_line() {
 for line in "${LINES_TO_APPEND[@]}"; do
     append_line "$line"
 done
-
