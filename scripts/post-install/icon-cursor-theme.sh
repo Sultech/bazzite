@@ -89,7 +89,7 @@ fi
 
 # Grant Flatpak permission to the icon and cursor theme folder
 echo "Giving Flatpak permission to the icons directory..."
-flatpak override --user --filesystem="$DEST_DIR"
+sudo flatpak override --filesystem="$DEST_DIR"
 
 # Check if the command was successful
 if [ $? -eq 0 ]; then
