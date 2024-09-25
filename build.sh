@@ -36,4 +36,5 @@ cd /etc/scripts/
 
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
-# curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
+curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
+# systemctl enable undervolt
