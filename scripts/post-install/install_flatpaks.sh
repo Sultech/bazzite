@@ -4,19 +4,18 @@
 # echo "Updating Flatpak..."
 # sudo flatpak update -y
 
-# Install each Flatpak application
+Install each Flatpak application
 echo "Installing Flatpak applications..."
-# sudo flatpak install flathub io.github.ungoogled_software.ungoogled_chromium -y
-# sudo flatpak install flathub com.discordapp.Discord -y
-# sudo flatpak install flathub org.telegram.desktop -y
-# sudo flatpak install flathub com.usebottles.bottles -y
-# sudo flatpak install flathub com.heroicgameslauncher.hgl -y
-# sudo flatpak install flathub com.stremio.Stremio -y
-# sudo flatpak install flathub org.remmina.Remmina -y
-# sudo flatpak install flathub com.wps.Office -y
-# sudo flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
-sudo flatpak override --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
-sudo flatpak override io.github.dvlv.boxbuddyrs --filesystem=home
+flatpak install --system flathub io.github.ungoogled_software.ungoogled_chromium -y
+# sudo flatpak install --system flathub com.discordapp.Discord -y
+flatpak install --system flathub org.telegram.desktop -y
+flatpak install --system flathub com.usebottles.bottles -y
+flatpak install --system flathub com.heroicgameslauncher.hgl -y
+flatpak install --system flathub com.stremio.Stremio -y
+flatpak install --system flathub org.remmina.Remmina -y
+flatpak install --system flathub com.wps.Office -y
+flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
+flatpak override io.github.dvlv.boxbuddyrs --filesystem=home
 python3 -m venv maestral-venv
 source maestral-venv/bin/activate
 python3 -m pip install --upgrade maestral
