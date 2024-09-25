@@ -29,3 +29,9 @@ systemctl enable bazzite-libvirtd-setup.service
 #### Example for enabling a System Unit File Test
 
 systemctl enable docker
+
+curl -Lo /etc/systemd/system/docker-permission-fix.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-permission-fix.service
+
+systemctl enable docker-permission-fix
+
+pip install git+https://github.com/georgewhewell/undervolt.git
