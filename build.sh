@@ -15,23 +15,19 @@ RELEASE="$(rpm -E %fedora)"
 # Remove packages
 dnf remove wireplumber -y
 
-# add repo 
+# add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
-
-# this installs a package from fedora repos
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session
-
-rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
-systemctl enable bazzite-libvirtd-setup.service
-# this would install a package from rpmfusion
-# rpm-ostree install vlc
-
-#### Example for enabling a System Unit File Test
-
 systemctl enable docker
-
+mkdir /usr/local/lib
+curl -Lo /usr/local/lib/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
 curl -Lo /etc/systemd/system/docker-permission-fix.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-permission-fix.service
-
 systemctl enable docker-permission-fix
 
+# installing virtualization packages
+rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
+systemctl enable bazzite-libvirtd-setup.service
+
+# installing undervolt not enabled by default
 pip install git+https://github.com/georgewhewell/undervolt.git
+curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
