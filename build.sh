@@ -29,8 +29,6 @@ systemctl enable docker-permission-fix
 rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
 systemctl enable bazzite-libvirtd-setup.service
 
-rm /etc/environment
-touch /etc/environment
 curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
 chmod +x /etc/scripts/append_to_environment.sh
 cd /etc/scripts/
