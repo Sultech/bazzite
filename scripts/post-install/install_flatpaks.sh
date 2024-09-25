@@ -13,7 +13,8 @@ sudo flatpak install flathub com.usebottles.bottles -y
 sudo flatpak install flathub com.heroicgameslauncher.hgl -y
 sudo flatpak install flathub com.stremio.Stremio -y
 sudo flatpak install flathub org.remmina.Remmina -y
-flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
+sudo flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
+sudo flatpak override io.github.dvlv.boxbuddyrs --filesystem=home
 
 echo "All specified Flatpak applications have been installed."
 
