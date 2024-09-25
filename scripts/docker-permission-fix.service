@@ -1,0 +1,16 @@
+[Unit]
+Description=Docker Permission Fix
+After=network.target
+
+[Service]
+User=root
+ExecStart=/usr/local/bin/docker-fix.sh
+Restart=on-failure
+StartLimitBurst=2
+# Restart, but not more than once every 10 minutes
+#StartLimitInterval=600
+# Restart, but not more than once every 30s (for testing purposes)
+StartLimitInterval=30
+
+[Install]
+WantedBy=multi-user.target
