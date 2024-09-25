@@ -2,6 +2,10 @@
 
 # Define the lines to append
 LINES_TO_APPEND=(
+    "# https://gitlab.gnome.org/GNOME/mutter/-/issues/3037"
+    "MUTTER_DEBUG_KMS_THREAD_TYPE=user"
+    "# Disable Brew auto-update"
+    "HOMEBREW_NO_AUTO_UPDATE=1"
     "XMODIFIERS=@im=none"
     "GSK_RENDERER=ngl"
     "__GLX_VENDOR_LIBRARY_NAME=nvidia"
