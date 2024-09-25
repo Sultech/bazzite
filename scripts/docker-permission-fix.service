@@ -4,7 +4,7 @@ After=network.target
 
 [Service]
 User=root
-ExecStart=/usr/local/bin/docker-fix.sh
+ExecStart=/etc/scripts/docker-fix.sh
 Restart=on-failure
 StartLimitBurst=2
 # Restart, but not more than once every 10 minutes
