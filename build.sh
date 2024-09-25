@@ -21,7 +21,7 @@ rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin do
 systemctl enable docker
 mkdir /etc/scripts/
 curl -Lo /etc/scripts/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
-chmod u+x /etc/scripts/docker-fix.sh
+chmod +x /etc/scripts/docker-fix.sh
 curl -Lo /etc/systemd/system/docker-permission-fix.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-permission-fix.service
 systemctl enable docker-permission-fix
 
