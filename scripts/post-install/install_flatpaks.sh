@@ -16,6 +16,10 @@ sudo flatpak install flathub org.remmina.Remmina -y
 sudo flatpak install flathub com.wps.Office -y
 sudo flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
 sudo flatpak override io.github.dvlv.boxbuddyrs --filesystem=home
+python3 -m venv maestral-venv
+source maestral-venv/bin/activate
+python3 -m pip install --upgrade maestral
+python3 -m pip install --upgrade 'maestral[gui]'
 
 echo "All specified Flatpak applications have been installed."
 
