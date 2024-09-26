@@ -7,7 +7,7 @@
 Install each Flatpak application
 echo "Installing Flatpak applications..."
 flatpak install --system flathub io.github.ungoogled_software.ungoogled_chromium -y
-# sudo flatpak install --system flathub com.discordapp.Discord -y
+flatpak install --system flathub com.discordapp.Discord -y
 flatpak install --system flathub org.telegram.desktop -y
 flatpak install --system flathub com.usebottles.bottles -y
 flatpak install --system flathub com.heroicgameslauncher.hgl -y
