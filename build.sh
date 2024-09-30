@@ -31,8 +31,8 @@ systemctl enable bazzite-libvirtd-setup.service
 
 curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
 chmod +x /etc/scripts/append_to_environment.sh
-cd /etc/scripts/
-./append_to_environment.sh
+# cd /etc/scripts/
+# ./append_to_environment.sh
 
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
