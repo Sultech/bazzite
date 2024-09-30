@@ -15,6 +15,7 @@ flatpak install --system flathub com.stremio.Stremio -y
 flatpak install --system flathub org.remmina.Remmina -y
 flatpak install --system flathub com.wps.Office -y
 sudo flatpak override com.usebottles.bottles --filesystem=/home/$USER/.var/app/com.heroicgameslauncher.hgl/config/heroic/tools/proton
+sudo flatpak override com.usebottles.bottles --filesystem=xdg-data/applications
 sudo flatpak override io.github.dvlv.boxbuddyrs --filesystem=home
 python3 -m venv maestral-venv
 source maestral-venv/bin/activate
