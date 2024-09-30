@@ -90,6 +90,7 @@ fi
 # Grant Flatpak permission to the icon and cursor theme folder
 echo "Giving Flatpak permission to the icons directory..."
 sudo flatpak override --filesystem="$DEST_DIR"
+sudo flatpak override --filesystem=/home/$USER/.themes
 
 # Check if the command was successful
 if [ $? -eq 0 ]; then
