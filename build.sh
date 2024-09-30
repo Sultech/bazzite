@@ -12,6 +12,9 @@ RELEASE="$(rpm -E %fedora)"
 # List of rpmfusion packages can be found here:
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
+# Disable mouse acceleration Gnome
+gsettings set org.gnome.desktop.peripherals.mouse accel-profile 'flat'
+
 # Remove packages
 dnf remove wireplumber -y
 
