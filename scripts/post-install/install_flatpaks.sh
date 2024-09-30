@@ -21,6 +21,7 @@ python3 -m venv maestral-venv
 source maestral-venv/bin/activate
 python3 -m pip install --upgrade maestral
 python3 -m pip install --upgrade 'maestral[gui]'
+sudo cp -R /usr/share/gnome-shell/extensions /home/$USER/.local/share/gnome-shell/
 
 echo "All specified Flatpak applications have been installed."
 
