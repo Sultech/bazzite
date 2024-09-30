@@ -31,13 +31,14 @@ systemctl enable bazzite-libvirtd-setup.service
 
 curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
 chmod +x /etc/scripts/append_to_environment.sh
-# cd /etc/scripts/
-# ./append_to_environment.sh
+cd /etc/scripts/
+./append_to_environment.sh
 
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
 curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
 # systemctl enable undervolt
 
-curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
-rpm-ostree install hyprland hypridle hyprlock hyprshot hyprpaper xdg-desktop-portal-hyprland waybar-git pavucontrol waypaper dunst rofi-wayland alacritty fontawesome-6-free-fonts hyprland-plugins nwg-clipman 
+#HyprLand
+#curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
+#rpm-ostree install hyprland hypridle hyprlock hyprshot hyprpaper xdg-desktop-portal-hyprland waybar-git pavucontrol waypaper dunst rofi-wayland alacritty fontawesome-6-free-fonts hyprland-plugins nwg-clipman 
