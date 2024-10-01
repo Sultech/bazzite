@@ -32,7 +32,7 @@ fi
 rm "$TEMP_FILE"
 
 # Grant Flatpak permission to the folder
-flatpak override --filesystem=/home/$USER/.local/share/fonts
+sudo flatpak override --filesystem=/home/$USER/.local/share/fonts
 
 echo "Download, extraction, and permission granting complete."
 
