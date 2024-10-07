@@ -40,9 +40,9 @@ curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com
 # systemctl enable undervolt
 
 #HyprLand
-curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
-curl -Lo /etc/yum.repos.d/tofik-nwg-shell-fedora-40.repo https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-40/tofik-nwg-shell-fedora-40.repo 
-rpm-ostree install hyprland hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git slurp golang nwg-look waypaper pavucontrol aylurs-gtk-shell-git wlogout alacritty dunst fontawesome-6-free-fonts hyprland-plugins rofi-wayland xclip rsync neovim alacritty
+# curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
+# curl -Lo /etc/yum.repos.d/tofik-nwg-shell-fedora-40.repo https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-40/tofik-nwg-shell-fedora-40.repo 
+# rpm-ostree install hyprland hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git slurp golang nwg-look waypaper pavucontrol aylurs-gtk-shell-git wlogout alacritty dunst fontawesome-6-free-fonts hyprland-plugins rofi-wayland xclip rsync neovim alacritty
 # rpm-ostree install hyprland hypridle hyprlock hyprshot hyprpaper xdg-desktop-portal-hyprland waybar-git pavucontrol waypaper dunst rofi-wayland alacritty fontawesome-6-free-fonts hyprland-plugins nwg-clipman 
 # rpm-ostree install hyprland dunst rofi-wayland waybar-git swaylock-effects wlogout hyprpicker slurp swappy wl-clipboard golang pavucontrol cargo libnotify swww 
 # go install go.senan.xyz/cliphist@latest
