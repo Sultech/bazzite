@@ -42,7 +42,7 @@ curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com
 #HyprLand
 curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
 #rpm-ostree install hyprland hypridle hyprlock hyprshot hyprpaper xdg-desktop-portal-hyprland waybar-git pavucontrol waypaper dunst rofi-wayland alacritty fontawesome-6-free-fonts hyprland-plugins nwg-clipman 
-rpm-ostree install hyprland dunst rofi-wayland waybar-git swaylock-effects wlogout hyprpicker slurp swappy wl-clipboard golang pavucontrol cargo libnotify
+rpm-ostree install hyprland dunst rofi-wayland waybar-git swaylock-effects wlogout hyprpicker slurp swappy wl-clipboard golang pavucontrol cargo libnotify swww 
 # go install go.senan.xyz/cliphist@latest
 
 #git clone https://github.com/LGFae/swww.git
