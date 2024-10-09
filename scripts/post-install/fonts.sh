@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define variables
-DOWNLOAD_URL="https://drive.usercontent.google.com/download?id=1s-wZF91THCjhbcTPHA-vClX5U7lxSAsa&export=download&confirm=t&uuid=717bb140-fcf0-454e-a369-f3a3ad5cfabe"
+DOWNLOAD_URL="https://drive.usercontent.google.com/download?id=1q6RvhqliXbZQ_TaO47mwmfpA8oSUW7fE&export=download&authuser=0&confirm=t&uuid=a2680cde-1ffa-4bc4-b077-3a3763b2f25a"
 DEST_DIR="/home/$USER/.local/share"
 TEMP_FILE="downloaded_file.zip"  # Change the extension if the file is not a zip
 
