@@ -3,6 +3,7 @@
 # Install the undervolt package from GitHub
 echo "Installing undervolt from GitHub..."
 sudo pip install git+https://github.com/georgewhewell/undervolt.git
+sudo curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
 
 # Check if the installation was successful
 if [ $? -eq 0 ]; then
