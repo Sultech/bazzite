@@ -17,7 +17,7 @@ dnf remove wireplumber -y
 
 # add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
-rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session yaru-icon-theme
+rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session yaru-theme gnome-shell-extension-pop-shell 
 systemctl enable docker
 mkdir /etc/scripts/
 curl -Lo /etc/scripts/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
