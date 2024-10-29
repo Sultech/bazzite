@@ -34,7 +34,7 @@ chmod +x /etc/scripts/append_to_environment.sh
 cd /etc/scripts/
 ./append_to_environment.sh
 
-rpm-ostree install snapd
+rpm-ostree install fuse squashfuse snapd
 ln -s /var/lib/snapd/snap /snap
 
 # installing undervolt not enabled by default
