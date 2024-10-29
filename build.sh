@@ -34,6 +34,9 @@ chmod +x /etc/scripts/append_to_environment.sh
 cd /etc/scripts/
 ./append_to_environment.sh
 
+rpm-ostree install snapd
+ln -s /var/lib/snapd/snap /snap
+
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
 # curl -Lo /etc/systemd/system/undervolt.service https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/undervolt.service
