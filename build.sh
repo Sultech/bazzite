@@ -13,11 +13,11 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Remove packages
-dnf remove wireplumber -y
+# dnf remove wireplumber -y
 
 # add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
-rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
+rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin #pipewire-media-session dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
 systemctl enable docker
 mkdir /etc/scripts/
 curl -Lo /etc/scripts/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
@@ -29,13 +29,13 @@ systemctl enable docker-permission-fix
 rpm-ostree install -y virt-manager edk2-ovmf qemu libvirt
 systemctl enable bazzite-libvirtd-setup.service
 
-curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
-chmod +x /etc/scripts/append_to_environment.sh
-cd /etc/scripts/
-./append_to_environment.sh
+#curl -Lo /etc/scripts/append_to_environment.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/append_to_environment.sh
+#chmod +x /etc/scripts/append_to_environment.sh
+#cd /etc/scripts/
+#./append_to_environment.sh
 
-rpm-ostree install fuse squashfuse snapd
-ln -s /var/lib/snapd/snap /snap
+#rpm-ostree install fuse squashfuse snapd
+#ln -s /var/lib/snapd/snap /snap
 
 # installing undervolt not enabled by default
 # pip install git+https://github.com/georgewhewell/undervolt.git
@@ -43,12 +43,9 @@ ln -s /var/lib/snapd/snap /snap
 # systemctl enable undervolt
 
 #HyprLand
-# curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-40.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-40/solopasha-hyprland-fedora-40.repo
-# curl -Lo /etc/yum.repos.d/tofik-nwg-shell-fedora-40.repo https://copr.fedorainfracloud.org/coprs/tofik/nwg-shell/repo/fedora-40/tofik-nwg-shell-fedora-40.repo 
-# rpm-ostree install hyprland hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git slurp golang nwg-look waypaper pavucontrol aylurs-gtk-shell-git wlogout alacritty dunst fontawesome-6-free-fonts hyprland-plugins rofi-wayland xclip rsync neovim alacritty
-# rpm-ostree install hyprland hypridle hyprlock hyprshot hyprpaper xdg-desktop-portal-hyprland waybar-git pavucontrol waypaper dunst rofi-wayland alacritty fontawesome-6-free-fonts hyprland-plugins nwg-clipman 
-# rpm-ostree install hyprland dunst rofi-wayland waybar-git swaylock-effects wlogout hyprpicker slurp swappy wl-clipboard golang pavucontrol cargo libnotify swww 
-# go install go.senan.xyz/cliphist@latest
+
+rpm-ostree install hyprland-git hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git pavucontrol kitty fontawesome-6-free-fonts hyprland-plugins-git rofi-wayland waypaper hyprsunset
+
 
 #git clone https://github.com/LGFae/swww.git
 #cd swww
