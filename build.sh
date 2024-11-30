@@ -44,7 +44,7 @@ systemctl enable bazzite-libvirtd-setup.service
 
 #HyprLand
 curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
-rpm-ostree install hyprland-git hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git pavucontrol kitty fontawesome-6-free-fonts hyprland-plugins-git rofi-wayland waypaper hyprsunset
+rpm-ostree install hyprland-git hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git pavucontrol kitty fontawesome-6-free-fonts hyprland-plugins-git rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config
 
 
 #git clone https://github.com/LGFae/swww.git
