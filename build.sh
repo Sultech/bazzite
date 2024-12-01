@@ -15,6 +15,8 @@ RELEASE="$(rpm -E %fedora)"
 # Remove packages
 # dnf remove wireplumber -y
 
+rpm-ostree install hyprland-devel
+
 # add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin #pipewire-media-session dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
@@ -44,7 +46,7 @@ systemctl enable bazzite-libvirtd-setup.service
 
 #HyprLand
 curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
-rpm-ostree install hyprland-git hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git pavucontrol kitty fontawesome-6-free-fonts hyprland-plugins-git rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config hyprland-devel
+rpm-ostree install hyprland-git hyprpaper hyprlock hypridle xdg-desktop-portal-hyprland waybar-git pavucontrol kitty fontawesome-6-free-fonts hyprland-plugins-git rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config
 
 
 #git clone https://github.com/LGFae/swww.git
