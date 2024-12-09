@@ -48,12 +48,12 @@ curl -Lo /etc/yum.repos.d/solopasha-astal-fedora-41.repo https://copr.fedorainfr
 curl -Lo /etc/yum.repos.d/peterwu-rendezvous-fedora-41.repo https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-41/peterwu-rendezvous-fedora-41.repo
 #rpm-ostree install hyprland-git hyprpaper hyprlock hypridle noto-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland waybar-git waypaper pavucontrol  fontawesome-6-free-fonts  rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config udis86 udis86-devel
 rpm-ostree install hyprland hyprpaper hyprlock hypridle google-noto-sans-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk eza python-pip python3-gobject tumbler brightnessctl nm-connection-editor network-manager-applet fuse ImageMagick jq xclip kitty neovim htop pinta blueman grim slurp cliphist nwg-look qt6ct waybar-git rofi-wayland zsh fzf pavucontrol papirus-icon-theme plasma-breeze gvfs wlogout waypaper astal bibata-cursor-themes fontawesome-6-free-fonts mozilla-fira-sans-fonts fira-code-fonts NetworkManager-tui
-pip install hyprshade
-pip install pywalfox
-pip install pywal
-pip install screeninfo
-wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
-chmod +x /usr/local/bin/oh-my-posh
+#pip install hyprshade
+#pip install pywalfox
+#pip install pywal
+#pip install screeninfo
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /var/usrlocal/bin/oh-my-posh
+chmod +x /var/usrlocal/bin/oh-my-posh
 #git clone https://github.com/LGFae/swww.git
 #cd swww
 #cargo build --release
