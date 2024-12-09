@@ -14,7 +14,6 @@ RELEASE="$(rpm -E %fedora)"
 
 # Remove packages
 # dnf remove wireplumber -y
-bash <(curl -s https://raw.githubusercontent.com/mylinuxforwork/dotfiles/main/setup-fedora.sh)
 # add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
 rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin #pipewire-media-session dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
