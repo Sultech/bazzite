@@ -44,9 +44,14 @@ systemctl enable bazzite-libvirtd-setup.service
 
 #HyprLand
 curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
+curl -Lo /etc/yum.repos.d/solopasha-astal-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/astal/repo/fedora-41/solopasha-astal-fedora-41.repo
+curl -Lo /etc/yum.repos.d/peterwu-rendezvous-fedora-41.repo https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-41/peterwu-rendezvous-fedora-41.repo
 #rpm-ostree install hyprland-git hyprpaper hyprlock hypridle noto-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland waybar-git waypaper pavucontrol  fontawesome-6-free-fonts  rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config udis86 udis86-devel
-rpm-ostree install hyprland hyprpaper hyprlock hypridle noto-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk eza python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet fuse ImageMagick jq xclip kitty neovim htop python-pywal pinta blueman grim slurp cliphist nwg-look qt6ct waybar-git rofi-wayland zsh fzf pavucontrol papirus-icon-theme breeze gvfs wlogout hyprshade waypaper grimblast-git astal bibata-cursor-theme fontawesome-6-free-fonts mozilla-fira-sans-fonts fira-code-fonts oh-my-posh NetworkManager-tui
-
+rpm-ostree install hyprland hyprpaper hyprlock hypridle noto-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk eza python-pip python3-gobject python-screeninfo tumbler brightnessctl nm-connection-editor network-manager-applet fuse ImageMagick jq xclip kitty neovim htop pinta blueman grim slurp cliphist nwg-look qt6ct waybar-git rofi-wayland zsh fzf pavucontrol papirus-icon-theme breeze gvfs wlogout waypaper astal bibata-cursor-theme fontawesome-6-free-fonts mozilla-fira-sans-fonts fira-code-fonts NetworkManager-tui
+pip install hyprshade
+pip install pywal
+wget https://github.com/JanDeDobbeleer/oh-my-posh/releases/latest/download/posh-linux-amd64 -O /usr/local/bin/oh-my-posh
+chmod +x /usr/local/bin/oh-my-posh
 #git clone https://github.com/LGFae/swww.git
 #cd swww
 #cargo build --release
