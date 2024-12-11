@@ -43,12 +43,12 @@ systemctl enable bazzite-libvirtd-setup.service
 
 #HyprLand
 curl -Lo /etc/yum.repos.d/solopasha-hyprland-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-41/solopasha-hyprland-fedora-41.repo
-curl -Lo /etc/yum.repos.d/solopasha-astal-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/astal/repo/fedora-41/solopasha-astal-fedora-41.repo
-curl -Lo /etc/yum.repos.d/peterwu-rendezvous-fedora-41.repo https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-41/peterwu-rendezvous-fedora-41.repo
+#curl -Lo /etc/yum.repos.d/solopasha-astal-fedora-41.repo https://copr.fedorainfracloud.org/coprs/solopasha/astal/repo/fedora-41/solopasha-astal-fedora-41.repo
+#curl -Lo /etc/yum.repos.d/peterwu-rendezvous-fedora-41.repo https://copr.fedorainfracloud.org/coprs/peterwu/rendezvous/repo/fedora-41/peterwu-rendezvous-fedora-41.repo
 #rpm-ostree install hyprland-git hyprpaper hyprlock hypridle noto-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland waybar-git waypaper pavucontrol  fontawesome-6-free-fonts  rofi-wayland waypaper hyprsunset cmake meson cpio pkg-config udis86 udis86-devel
-rpm-ostree install hyprland hyprpaper hyprlock hypridle google-noto-sans-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk eza python-pip python3-gobject tumbler brightnessctl nm-connection-editor network-manager-applet fuse ImageMagick jq xclip kitty neovim htop pinta blueman grim slurp cliphist nwg-look qt6ct waybar-git rofi-wayland zsh fzf pavucontrol papirus-icon-theme plasma-breeze gvfs wlogout waypaper astal bibata-cursor-themes fontawesome-6-free-fonts mozilla-fira-sans-fonts fira-code-fonts NetworkManager-tui
-rpm-ostree install wget zip unzip gum rsync git figlet sed vim xdg-user-dirs man-pages python3-pip
-#pip install hyprshade
+#rpm-ostree install hyprland hyprpaper hyprlock hypridle google-noto-sans-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk eza python-pip python3-gobject tumbler brightnessctl nm-connection-editor network-manager-applet fuse ImageMagick jq xclip kitty neovim htop pinta blueman grim slurp cliphist nwg-look qt6ct waybar-git rofi-wayland zsh fzf pavucontrol papirus-icon-theme plasma-breeze gvfs wlogout waypaper astal bibata-cursor-themes fontawesome-6-free-fonts mozilla-fira-sans-fonts fira-code-fonts NetworkManager-tui
+#rpm-ostree install wget zip unzip gum rsync git figlet sed vim xdg-user-dirs man-pages python3-pip
+rpm-ostree install hyprland hyprlock hypridle hyprsunset hyprpolkitagent hyprshot cliphist waypaper google-noto-sans-fonts xdg-desktop-portal-hyprland libnotify dunst kitty qt5-qtwayland qt6-qtwayland fastfetch xdg-desktop-portal-gtk network-manager-applet brightnessctl nwg-look waybar-git rofi-wayland pavucontrol fontawesome-6-free-fonts
 #pip install pywalfox
 #pip install pywal
 #pip install screeninfo
