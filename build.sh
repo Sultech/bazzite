@@ -13,10 +13,10 @@ RELEASE="$(rpm -E %fedora)"
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/39/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # Remove packages
-# dnf remove wireplumber -y
+dnf remove --noautoremove wireplumber -y
 # add docker repo, installing packages, adding service to fix docker in distrobox 
 curl -Lo /etc/yum.repos.d/docker-ce.repo https://download.docker.com/linux/fedora/docker-ce.repo
-rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin #pipewire-media-session gnome-session-xsession dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
+rpm-ostree install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin pipewire-media-session #gnome-session-xsession dotnet-sdk-8.0 aspnetcore-runtime-8.0 dotnet-runtime-8.0 gcc selinux-policy-targeted #yaru-theme gnome-shell-extension-pop-shell 
 systemctl enable docker
 mkdir /etc/scripts/
 curl -Lo /etc/scripts/docker-fix.sh https://raw.githubusercontent.com/Sultech/bazzite/refs/heads/main/scripts/docker-fix.sh
